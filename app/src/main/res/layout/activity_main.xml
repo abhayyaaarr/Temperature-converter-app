@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/getVal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:hint="Enter Temperature"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/showAns"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="0.0"
+        android:textSize="30sp"
+        android:gravity="center_horizontal" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/CtoF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C to F" />
+
+        <RadioButton
+            android:id="@+id/FtoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F to C" />
+    </RadioGroup>
+    \
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ansButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0B0000"
+            android:text="Show Temperature"
+            android:textColor="#0C0B0B"
+            android:textColorHighlight="#191111"
+            android:textColorLink="#FF0000"
+             />
+
+        <Button
+            android:id="@+id/againButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="#1E1111"
+            android:text="Again"
+            android:textColor="#120808"
+            android:textColorHighlight="#090908"
+            android:textColorLink="#E8D31C" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
